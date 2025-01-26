@@ -3,7 +3,7 @@
 Developed By : `Yashar PourMohamad` & `Ehsan Ghasemi`.</br>
 Email(Ehsan): `ehs.ghasemi@gmail.com`. </br>
 Email(Yashar): `yasharpm@gmail.com`. </br>
-The movie app powered by VUE3 + TypeScript + TonWeb. </br>
+The Ton Payment Channel VUE3 + TypeScript + TonWeb. </br>
 
 
 ## Project Setup
@@ -23,3 +23,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Lint and Fix Files
+
+### use this telegram channel to top up your wallet
+#### @testgiver_ton_bot
