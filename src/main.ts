@@ -18,7 +18,7 @@ app.use(PrimeVue);
 
 app.use(new VueSocketIO({
     debug: false,
-    connection: 'http://188.208.143.130:3030/'
+    connection: 'http://localhost:3030'
 }));
 
 

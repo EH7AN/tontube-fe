@@ -38,7 +38,6 @@ onMounted(async () => {
     const providerUrl = 'https://testnet.toncenter.com/api/v2/jsonRPC'; // TON HTTP API url. Use this url for testnet
     const apiKey = 'eb6b642b1de62cfbdeabcb772d95ee2f8989ae4094be51e6fb99b62518e9ad5d'; // Obtain your API key in https://t.me/tontestnetapibot
     const tonweb = new TonWeb(new TonWeb.HttpProvider(providerUrl, {apiKey}));
-
     const seed = TonWeb.utils.bytesToHex(tonweb.utils.newSeed())
     localStorage.setItem('ton_pk', seed)
 

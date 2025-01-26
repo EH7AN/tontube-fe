@@ -24,9 +24,6 @@
         <i v-if="streamState === 'IDLE'" class="pi pi-play text-white text-6xl"></i>
         <i v-if="streamState === 'STREAMING'" class="pi pi-pause text-white text-6xl"></i>
       </div>
-<!--      <div class="v-b-hl">-->
-<!--        <Button class="btn-play-stream" @click="playStream">Play Stream</Button>-->
-<!--      </div>-->
       <!-- ================ Buy Subscription Dialog ==============     -->
       <Dialog v-model:visible="balanceAcc">
         <template #header>
@@ -107,7 +104,6 @@ export default {
       this.tonHelp.serverWalletAddr = new TonWeb.utils.Address(data[1]);
     },
     latestState: function (data)  {
-      debugger
       if (data === 'end') {
         data = null;
       }
@@ -146,7 +142,7 @@ export default {
       this.secret = data;
 
       if (this.streamState == OwnState.STREAMING && this.$refs.videoPlayer.paused) {
-        this.$refs.videoPlayer.src = "http://188.208.143.130:3001/getVideo?secret=" + this.secret;
+        this.$refs.videoPlayer.src = "http://localhost:3001/getVideo?secret=" + this.secret;
         this.$refs.videoPlayer.play();
       }
     }
