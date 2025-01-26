@@ -1,9 +1,8 @@
 # TonTube
-`Powered By TonWeb and Telegram`.</br></br>
-Developed By : `Yashar PourMohamad` & `Ehsan Ghasemi`.</br>
+### `Powered By TonWeb and Telegram`.</br></br>
+Developed By : `Ehsan Ghasemi`.</br>
 Email(Ehsan): `ehs.ghasemi@gmail.com`. </br>
-Email(Yashar): `yasharpm@gmail.com`. </br>
-The Ton Payment Channel VUE3 + TypeScript + TonWeb. </br>
+## The Ton Payment Channel VUE3 + TypeScript + TonWeb. </br>
 
 
 ## Project Setup
