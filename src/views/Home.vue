@@ -142,7 +142,7 @@ export default {
       this.secret = data;
 
       if (this.streamState == OwnState.STREAMING && this.$refs.videoPlayer.paused) {
-        this.$refs.videoPlayer.src = "http://localhost:3001/getVideo?secret=" + this.secret;
+        this.$refs.videoPlayer.src = "https://tontube-server-production.up.railway.app/getVideo?secret=" + this.secret;
         this.$refs.videoPlayer.play();
       }
     }
@@ -194,7 +194,7 @@ export default {
     streamEnded() {
       console.log('Chunk ended !')
       if (this.streamState === OwnState.STREAMING) {
-        this.$refs.videoPlayer.src = "http://localhost:3001/getVideo?secret=" + this.secret;
+        this.$refs.videoPlayer.src = "https://tontube-server-production.up.railway.app/getVideo?secret=" + this.secret;
         this.$refs.videoPlayer.play();
       }
     },

@@ -18,7 +18,7 @@ app.use(PrimeVue);
 
 app.use(new VueSocketIO({
     debug: false,
-    connection: 'http://localhost:3030'
+    connection: 'wss://tontube-server-production.up.railway.app'
 }));
 
 
